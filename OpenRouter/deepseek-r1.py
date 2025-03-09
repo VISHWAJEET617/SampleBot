@@ -2,7 +2,7 @@ import telebot
 import requests
 
 # Replace '<YOUR_BOT_TOKEN>' with your bot's token
-API_TOKEN = '<YOUR_BOT_TOKEN>'
+API_TOKEN = '<7299223546:AAEMkxNTEfBjmCwo7_CD8LRN43APIcxHeXw>'
 bot = telebot.TeleBot(API_TOKEN)
 
 # Welcome message for the /start command
@@ -22,7 +22,7 @@ def respond_to_message(message):
     response = requests.post(
         url="https://openrouter.ai/api/v1/chat/completions",
         headers={
-            "Authorization": "Bearer <OPENROUTER_API_KEY>",  # Replace with your OpenRouter API key
+            "Authorization": "Bearer <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>",  # Replace with your OpenRouter API key
         },
         json={
             "model": "deepseek/deepseek-r1:free",  # Specify the model to use
